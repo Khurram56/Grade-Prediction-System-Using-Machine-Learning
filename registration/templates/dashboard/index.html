@@ -1,0 +1,124 @@
+{% extends 'partials/base.html' %}
+{% block title %}Home{% endblock %}
+{% load crispy_forms_tags %}
+{% block content %}
+<!-- <div class="containers"> -->
+  <div class="row mt-4">
+    <div class="col-md-9 offset-md-2">
+      <div class="card shadow">
+        <div class="card-body">
+          <form method="POST">
+            {% csrf_token %}
+            <div class="row">
+                <div class="col-4">
+                  {{ form.name|as_crispy_field }}
+                </div>
+                <div class="col-md-2">
+                    {{ form.sex|as_crispy_field }}
+                  </div>
+                  <div class="col-md-2">
+                    {{ form.address|as_crispy_field }}
+                  </div>
+                  <div class="col-md-2">
+                    {{ form.famsize|as_crispy_field }}
+                  </div>
+                  <div class="col-md-2">
+                    {{ form.Pstatus|as_crispy_field }}
+                  </div>
+              </div>
+            <div class="row">
+              <div class="col-md-2">
+                {{ form.Medu|as_crispy_field }}
+              </div>
+              <div class="col-md-2">
+                {{ form.Fedu|as_crispy_field }}
+              </div>
+              <div class="col-md-2">
+                {{ form.Mjob|as_crispy_field }}
+              </div>
+              <div class="col-md-2">
+                {{ form.Fjob|as_crispy_field }}
+              </div> 
+              <div class="col-md-2">
+                {{ form.guardian|as_crispy_field }}
+              </div>
+              <div class="col-md-2">
+                {{ form.traveltime|as_crispy_field }}
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-md-2">
+                {{ form.studytime|as_crispy_field }}
+              </div>
+              <div class="col-md-2">
+                {{ form.failures|as_crispy_field }}
+              </div>
+              <div class="col-md-2">
+                {{ form.schoolsup|as_crispy_field }}
+              </div>
+              <div class="col-md-2">
+                {{ form.famsup|as_crispy_field }}
+              </div>
+              <div class="col-md-2">
+                {{ form.paid|as_crispy_field }}
+              </div>
+              <div class="col-md-2">
+                {{ form.activities|as_crispy_field }}
+              </div>
+            </div>
+            <div class="row">
+                  <div class="col-md-2">
+                    {{ form.nursery|as_crispy_field }}
+                  </div>
+                  <div class="col-md-2">
+                    {{ form.higher|as_crispy_field }}
+                  </div>
+                  <div class="col-md-2">
+                      {{ form.internet|as_crispy_field }}
+                    </div>
+                    <div class="col-md-2">
+                      {{ form.famrel|as_crispy_field }}
+                    </div>
+                    <div class="col-md-2">
+                      {{ form.freetime|as_crispy_field }}
+                    </div>
+                      <div class="col-md-2">
+                        {{ form.romantic|as_crispy_field }}
+                      </div>
+              </div>
+              <div class="row">
+                  <div class="col-md-2">
+                    {{ form.goout|as_crispy_field }}
+                  </div>
+                  <div class="col-md-2">
+                    {{ form.health|as_crispy_field }}
+                  </div>
+                  <div class="col-md-2">
+                    {{ form.absences|as_crispy_field }}
+                  </div>
+                  <div class="col-md-3">
+                    {{ form.Dalc|as_crispy_field }}
+                  </div>
+                  <div class="col-md-3">
+                    {{ form.Walc|as_crispy_field }}
+                  </div>
+              </div>
+              <div class="row">
+                <div class="col-md-2">
+                  {{ form.G1|as_crispy_field }}
+                </div>
+                <div class="col-md-2">
+                  {{ form.G2|as_crispy_field }}
+                </div>
+               
+              </div>
+            <input class="btn btn-success p-3" type="submit" value="Make Prediction">
+          </form>
+        </div>
+      </div>
+       
+    </div>
+     
+  </div>
+<!-- </div> -->
+{% endblock %}

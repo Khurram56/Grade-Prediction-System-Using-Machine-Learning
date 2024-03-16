@@ -1,0 +1,61 @@
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>Home Page</title>
+  </head>
+  <body>
+    <style>
+      body {
+          text-align: center;
+          /* background-image: url('std.png');
+          background-size: cover;
+          background-repeat: no-repeat;
+          background-attachment: fixed; */
+      }
+
+      h1 {
+          font-size: 36px;
+          margin-top: 20px;
+      }
+      .btn-container {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          margin-top: 20px;
+      }
+      .btn {
+          margin: 20px;
+          font-size: 20px;
+          padding: 10px;
+          flex: 1;
+          font-weight: bold;
+      }
+      .header{
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          margin-top: 20px;
+      }
+  </style>
+    <div class="header">
+      <i class="fa fa-graduation-cap fa-5x" aria-hidden="true"></i>
+      <h1>Student Grades Prediction</h1></div>
+    <div class="btn-container">
+    <a href="{% url 'signup' %}" class="btn btn-primary"><i class="fa fa-user fa-4x" aria-hidden="true"></i> Student</a>
+    <a href="http://127.0.0.1:8000/admin" class="btn btn-info"><i class="fa fa-user-circle-o fa-4x" aria-hidden="true"></i> Admin</a>
+  </div>
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.7/dist/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+  </body>
+</html>

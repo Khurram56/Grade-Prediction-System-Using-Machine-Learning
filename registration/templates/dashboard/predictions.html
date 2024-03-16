@@ -1,0 +1,100 @@
+{% extends 'partials/base.html' %}
+{% block title %}All Prediction{% endblock %}
+
+{% block content  %}
+<div class="container">
+    <div class="row mt-4">
+        <div class="col-md-8 offset-md-2">
+          <table class="table">
+          <thead>
+           <tr>
+             <th scope="col">Name</th>
+             <th scope="col">Prediction</th>
+           </tr>
+         </thead>
+         <tbody>
+          {% for data in predicted_grades %}
+      <tr>
+        <th scope="row">{{ data.name}}</th>
+        <td>{{ data.Grades}}</td>
+      </tr>
+      {% endfor %}
+    </tbody>
+</table> 
+ </div>
+    </div>
+</div>
+{% comment %} <div class="container"> {% endcomment %}
+    {% comment %} <div class="row mt-4"> {% endcomment %}
+        {% comment %} <div class="col-md-8 offset-md-2"> {% endcomment %}
+        {% comment %} <table class="table">
+                <thead>
+                  <tr>
+                    <th scope="col">Name</th>
+                    <th scope="col">Sex</th>
+                    <th scope="col">Address</th>
+                    <th scope="col">Family Size</th>
+                    <th scope="col">Parent Status</th>
+                    <th scope="col">Mother Education</th>
+                    <th scope="col">Father Education</th>
+                    <th scope="col">Mother Job</th>
+                    <th scope="col">Father Job</th>
+                    <th scope="col">Prediction</th>
+                    <th scope="col">Reason</th>
+                    <th scope="col">Guardian</th>
+                    <th scope="col">Travel Time</th>
+                    <th scope="col">Study Time</th>
+                    <th scope="col">Failure</th>
+                    <th scope="col">Schools up</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  {% for data in predicted_grades %}
+                  <tr>
+                    <th scope="row">{{ data.name }}</th>
+                    <td>{{ data.age }}</td>
+                    <td>{{ data.height }}</td>
+                    <td>{{ data.sex }}</td>
+                    <td>{{ data.predictions }}</td>
+                  </tr>
+                  {% endfor %}
+                </tbody>
+        </table>
+        <table class="table">
+            <thead>
+              <tr>
+                <th scope="col">Family up</th>
+                <th scope="col">Paid</th>
+                <th scope="col">Acitivities</th>
+                <th scope="col">Nursery</th>
+                <th scope="col">Hihger</th>
+                <th scope="col">Internet</th>
+                <th scope="col">Romantic</th>
+                <th scope="col">Family Relation</th>
+                <th scope="col">Free Time</th>
+                <th scope="col">Goout Time</th>
+                <th scope="col">Dalc</th>
+                <th scope="col">Walc</th>
+                <th scope="col">Health</th>
+                <th scope="col">Absence</th>
+                <th scope="col">G1</th>
+                <th scope="col">G2</th>
+                <th scope="col">Prediction</th>
+              </tr>
+            </thead>
+            <tbody>
+              {% for data in predicted_sports %}
+              <tr>
+                <th scope="row">{{ data.name }}</th>
+                <td>{{ data.age }}</td>
+                <td>{{ data.height }}</td>
+                <td>{{ data.sex }}</td>
+                <td>{{ data.predictions }}</td>
+              </tr>
+              {% endfor %}
+            </tbody>
+    </table> {% endcomment %}
+        {% comment %} </div> {% endcomment %}
+    {% comment %} </div> {% endcomment %}
+{% comment %} </div> {% endcomment %}
+{% endblock %}
